@@ -82,3 +82,14 @@
       "calt" 1;
   }
 }
+
+/* D3 chart text color */
+.animal-speed-chart text {
+  fill: black;
+}
+
+/* Dark theme text color */
+.dark .animal-speed-chart text,
+[data-theme="dark"] .animal-speed-chart text {
+  fill: white;
+}

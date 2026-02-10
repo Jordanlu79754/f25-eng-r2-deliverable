@@ -30,7 +30,8 @@ export default async function SpeciesList() {
       </div>
       <Separator className="my-4" />
       <div className="flex flex-wrap justify-center">
-        {species?.map((species) => <SpeciesCard key={species.id} species={species} />)}
+        {/* Passed in sessionId as a prop */}
+        {species?.map((species) => <SpeciesCard key={species.id} species={species} sessionId={sessionId} />)}
       </div>
     </>
   );
